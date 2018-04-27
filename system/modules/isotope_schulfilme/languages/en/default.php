@@ -8,3 +8,9 @@ $GLOBALS['TL_LANG']['MSC']['newFileUpload'] = 'Die Datei "%s" wurde erfolgreich 
 
 // Errors
 $GLOBALS['TL_LANG']['ERR']['doNotAllowMultifileupload'] = 'Multifile-Upload ist nicht m&ouml;glich. Es darf maximal eine Datei hochgeladen werden. Bitte probieren Sie es nochmals.';
+
+
+// MSC
+$GLOBALS['TL_LANG']['MSC']['zielgruppe'] = 'Zielgruppe';
+$GLOBALS['TL_LANG']['MSC']['fach'] = 'Fach';
+$GLOBALS['TL_LANG']['MSC']['movie_length'] = 'Filml&auml;nge';

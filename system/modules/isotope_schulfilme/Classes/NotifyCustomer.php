@@ -26,15 +26,14 @@ class NotifyCustomer
 
 
     /**
-     *
+     * Notify customer before contract expires
      */
     public static function notifyCustomerBeforeContractExpiration()
     {
-
         $limit = Config::get('sendNotificationXDaysBeforeContractExpiration') * 24 * 3600;
 
         // Restore erinnerungsnachrichtVersandt
-        if($limit > 0)
+        if ($limit > 0)
         {
             Database::getInstance()->prepare('UPDATE tl_member SET erinnerungsnachrichtVersandt = ? WHERE erinnerungsnachrichtVersandt = ? AND vertragsendeAm > ?')->execute('', '1', time() + $limit);
         }
@@ -44,7 +43,6 @@ class NotifyCustomer
         {
             return;
         }
-
 
 
         // Use terminal42/notification_center

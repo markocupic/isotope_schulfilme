@@ -22,6 +22,8 @@ ClassLoader::addClasses(array
     'Markocupic\Isotope\Classes\NotifyCustomer'         => 'system/modules/isotope_schulfilme/Classes/NotifyCustomer.php',
     // VideoStream
     'Markocupic\Isotope\Classes\VideoStream'            => 'system/modules/isotope_schulfilme/Classes/VideoStream.php',
+    // ImportGallery
+    'Markocupic\Isotope\Classes\ImportGallery'            => 'system/modules/isotope_schulfilme/Classes/ImportGallery.php',
     //Dca
     'Markocupic\Isotope\Classes\Dca\tl_member'          => 'system/modules/isotope_schulfilme/Classes/Dca/tl_member.php',
     'Markocupic\Isotope\Classes\Dca\tl_settings'        => 'system/modules/isotope_schulfilme/Classes/Dca/tl_settings.php',
