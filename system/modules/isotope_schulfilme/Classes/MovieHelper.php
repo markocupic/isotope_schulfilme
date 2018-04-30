@@ -40,6 +40,25 @@ class MovieHelper
         return $objProduct->name;
     }
 
+    /**
+     * @return string
+     */
+    public static function getTopicsAsJson()
+    {
+        $objAttribute = Database::getInstance()->prepare('SELECT * FROM tl_iso_attribute_option WHERE pid=? AND published=? ORDER BY sorting')->execute(25, '1');
+        while ($objAttribute->next())
+        {
+            $arrAttribute[] = array(
+                'type'  => $objAttribute->type,
+                'label' => $objAttribute->label,
+            );
+        }
+
+        $strJS = sprintf('<script>isoTopics = %s</script>', json_encode($arrAttribute));
+
+        return $strJS;
+
+    }
 
     /**
      * generatePage Hook
