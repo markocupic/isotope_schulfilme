@@ -45,12 +45,18 @@ class MovieHelper
      */
     public static function getTopicsAsJson()
     {
+        $currentGroup = '';
         $objAttribute = Database::getInstance()->prepare('SELECT * FROM tl_iso_attribute_option WHERE pid=? AND published=? ORDER BY sorting')->execute(25, '1');
         while ($objAttribute->next())
         {
+            if ($objAttribute->type === 'group')
+            {
+                $currentGroup = $objAttribute->label;
+            }
             $arrAttribute[] = array(
-                'type'  => $objAttribute->type,
-                'label' => $objAttribute->label,
+                'type'      => $objAttribute->type,
+                'label'     => $objAttribute->label,
+                'belongsTo' => ($objAttribute->type === 'option') ? $currentGroup : '',
             );
         }
 
