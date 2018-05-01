@@ -14,3 +14,4 @@ $GLOBALS['TL_LANG']['ERR']['doNotAllowMultifileupload'] = 'Multifile-Upload ist 
 $GLOBALS['TL_LANG']['MSC']['zielgruppe'] = 'Zielgruppe';
 $GLOBALS['TL_LANG']['MSC']['fach'] = 'Fach';
 $GLOBALS['TL_LANG']['MSC']['movie_length'] = 'Filml&auml;nge';
+$GLOBALS['TL_LANG']['MSC']['inklusion'] = 'Inklusion';
