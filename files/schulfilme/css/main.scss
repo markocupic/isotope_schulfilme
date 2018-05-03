@@ -4,10 +4,13 @@
   margin-top: 7em;
 }
 
-/** Hide toggler on small screens **/
-@media screen and (max-width: 700px) {
+/** Mobile devices **/
+@media screen and (max-width: 850px) {
   .main-navigation-iso-filter-search {
-    display:none !important;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+    right: 6.6666%;
   }
 }
 
@@ -20,6 +23,13 @@
   color: #ffffff;
   text-decoration: none;
   text-indent: -99em;
+}
+
+/** Mobile devices **/
+@media screen and (max-width: 850px) {
+  .main-navigation-iso-filter-search a.toggler {
+    margin-right: 0;
+  }
 }
 
 .main-navigation-iso-filter-search a.toggler:after {
@@ -37,12 +47,20 @@
   text-indent: 0;
 }
 
+/** Mobile devices **/
+@media screen and (max-width: 850px) {
+  .main-navigation-iso-filter-search a.toggler:after {
+    border-left: 0;
+    padding: 0;
+  }
+}
+
 .main-navigation-iso-filter-search-form {
   display: none !important;
 }
 
 .main-navigation-iso-filter-search-form.is-active, .main-navigation-iso-filter-search-form.is-pre-active {
-  display: block!important;
+  display: block !important;
 }
 
 .main-navigation-iso-filter-search-form.is-pre-active {
@@ -92,6 +110,7 @@ a.main-navigation-iso-filter-search-form-close {
   text-indent: -99em;
   text-decoration: none;
 }
+
 a.main-navigation-iso-filter-search-form-close:after {
   font: 2.8em/1 "RockSolid Icons";
   content: "\e14a";
@@ -112,6 +131,7 @@ a.main-navigation-iso-filter-search-form-close:after {
   color: inherit;
   background: transparent;
 }
+
 .main-navigation-iso-filter-search-form button:hover {
   background-color: #999;
 }
@@ -135,8 +155,8 @@ a.main-navigation-iso-filter-search-form-close:after {
   font-size: 2.4em;
 }
 
-
 .main-navigation-iso-filter-search-form .awesomplete ul li {
   color: #555 !important;
 }
+
 /** end main navigation iso filter search **/
