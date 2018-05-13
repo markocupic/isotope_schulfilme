@@ -12,6 +12,16 @@ $GLOBALS['TL_LANG']['ERR']['doNotAllowMultifileupload'] = 'Multifile-Upload ist 
 
 // MSC
 $GLOBALS['TL_LANG']['MSC']['zielgruppe'] = 'Zielgruppe';
-$GLOBALS['TL_LANG']['MSC']['fach'] = 'Fach';
-$GLOBALS['TL_LANG']['MSC']['movie_length'] = 'Filml&auml;nge';
-$GLOBALS['TL_LANG']['MSC']['inklusion'] = 'Inklusion';
+$GLOBALS['TL_LANG']['MSC']['fach'] = 'Fachbereich';
+$GLOBALS['TL_LANG']['MSC']['movie_length'] = 'Dauer';
+$GLOBALS['TL_LANG']['MSC']['movie_length_min'] = 'Minuten';
+$GLOBALS['TL_LANG']['MSC']['inklusion'] = 'Fachbereich';
+$GLOBALS['TL_LANG']['MSC']['movie_year'] = 'Produktionsjahr';
+$GLOBALS['TL_LANG']['MSC']['gema'] = 'Gemafrei.<br>Urheberrechtlich gesch&uuml;tzt.';
+$GLOBALS['TL_LANG']['MSC']['licence_note'] = '*<br><strong>Unterrichtslizenz</strong> für die zeitlich unbegrenzte Nutzung in Ihrem Unterricht<br>
+<strong>Schullizenz</strong> für die zeitlich unbgrenzte Nutzung an Ihrer gesamten Schule<br>
+<strong>Abonnements</strong> unterliegen den im Produkttext genannten Lizenzbedingungen ';
+
+
+
+$GLOBALS['TL_LANG']['MSC']['noProducts'] = 'Keine passenden Filme gefunden. <br><br><strong>Hinweis</strong>:<br>Je mehr Kriterien Sie im Produktfilter ausw&auml;hlen, um so mehr schr&auml;nken Sie die Ergebnisliste ein. Sie k&ouml;nnen einzelne Kriterien durch Anklicken aktivieren und wieder deaktivieren. Um die Suche zur&uuml;ckzusetzen, klicken Sie im Produktfilter auf <a href="/filme.html">Filter zur&uuml;cksetzen</a>.';

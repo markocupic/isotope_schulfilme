@@ -59,3 +59,9 @@ $GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['schulfilme'] = array
         'email_html'           => array('customer_firstname', 'customer_lastname', 'customer_street', 'customer_postal', 'customer_city', 'customer_expiration_date'),
     ),
 );
+
+// Front end modules
+$GLOBALS['FE_MOD']['iso_schulfilme'] = array
+(
+    'productListFilterDisplay' => 'Markocupic\Isotope\Modules\IsoProductListFilterDisplay',
+);

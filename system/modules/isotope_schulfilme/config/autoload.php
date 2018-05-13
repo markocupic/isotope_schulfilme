@@ -14,18 +14,28 @@
  */
 ClassLoader::addClasses(array
 (
-    'Markocupic\Isotope\Widget\DocumentUpload'          => 'system/modules/isotope_schulfilme/widgets/DocumentUpload.php',
-    'Markocupic\Isotope\Model\Attribute\DocumentUpload' => 'system/modules/isotope_schulfilme/models/Attribute/DocumentUpload.php',
+    'Markocupic\Isotope\Widget\DocumentUpload'               => 'system/modules/isotope_schulfilme/widgets/DocumentUpload.php',
+    'Markocupic\Isotope\Model\Attribute\DocumentUpload'      => 'system/modules/isotope_schulfilme/models/Attribute/DocumentUpload.php',
     // MovieHelper
-    'Markocupic\Isotope\Classes\MovieHelper'            => 'system/modules/isotope_schulfilme/Classes/MovieHelper.php',
+    'Markocupic\Isotope\Classes\MovieHelper'                 => 'system/modules/isotope_schulfilme/Classes/MovieHelper.php',
     // NotifyCustomer
-    'Markocupic\Isotope\Classes\NotifyCustomer'         => 'system/modules/isotope_schulfilme/Classes/NotifyCustomer.php',
+    'Markocupic\Isotope\Classes\NotifyCustomer'              => 'system/modules/isotope_schulfilme/Classes/NotifyCustomer.php',
     // VideoStream
-    'Markocupic\Isotope\Classes\VideoStream'            => 'system/modules/isotope_schulfilme/Classes/VideoStream.php',
+    'Markocupic\Isotope\Classes\VideoStream'                 => 'system/modules/isotope_schulfilme/Classes/VideoStream.php',
     // ImportGallery
-    'Markocupic\Isotope\Classes\ImportGallery'            => 'system/modules/isotope_schulfilme/Classes/ImportGallery.php',
+    'Markocupic\Isotope\Classes\ImportGallery'               => 'system/modules/isotope_schulfilme/Classes/ImportGallery.php',
     //Dca
-    'Markocupic\Isotope\Classes\Dca\tl_member'          => 'system/modules/isotope_schulfilme/Classes/Dca/tl_member.php',
-    'Markocupic\Isotope\Classes\Dca\tl_settings'        => 'system/modules/isotope_schulfilme/Classes/Dca/tl_settings.php',
+    'Markocupic\Isotope\Classes\Dca\tl_member'               => 'system/modules/isotope_schulfilme/Classes/Dca/tl_member.php',
+    'Markocupic\Isotope\Classes\Dca\tl_settings'             => 'system/modules/isotope_schulfilme/Classes/Dca/tl_settings.php',
+    // FE Modules
+    'Markocupic\Isotope\Modules\IsoProductListFilterDisplay' => 'system/modules/isotope_schulfilme/modules/IsoProductListFilterDisplay.php',
+));
+
+/**
+ * Register the templates
+ */
+TemplateLoader::addFiles(array
+(
+    'mod_iso_product_list_display' => 'system/modules/isotope_schulfilme/templates',
 ));
 

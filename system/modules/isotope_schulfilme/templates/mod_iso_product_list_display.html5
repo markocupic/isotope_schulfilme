@@ -1,0 +1,27 @@
+<!-- indexer::stop -->
+<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+  <?php if ($this->headline): ?>
+    <<?= $this->hl ?>><?= $this->headline ?></<?= $this->hl ?>>
+  <?php endif; ?>
+
+  <?php if ($this->hasFilter): ?>
+  <h3>Aktive Filter</h3>
+  <ul class="filter_level_0">
+    <?php foreach ($this->filters as $k => $v): ?>
+    <li><?= $k ?>
+      <ul class="filter_level_1">
+      <?php foreach ($v as $kk => $vv): ?>
+        <li><?= $vv ?></li>
+      <?php endforeach; ?>
+      </ul>
+    </li>
+    <?php endforeach; ?>
+  </ul>
+
+  <div>
+    Ergebnis Ihrer Suche: <?= $this->filters2 ?>
+  </div>
+  <?php endif; ?>
+
+</div>
+<!-- indexer::continue -->
