@@ -23,5 +23,6 @@ $GLOBALS['TL_LANG']['MSC']['licence_note'] = '*<br><strong>Unterrichtslizenz</st
 <strong>Abonnements</strong> unterliegen den im Produkttext genannten Lizenzbedingungen ';
 
 
-
+$GLOBALS['TL_LANG']['MSC']['activeIsoFilters'] = 'Aktive Filter';
+$GLOBALS['TL_LANG']['MSC']['resultOfYourSearch'] = 'Ergebnis Ihrer Suche';
 $GLOBALS['TL_LANG']['MSC']['noProducts'] = 'Keine passenden Filme gefunden. <br><br><strong>Hinweis</strong>:<br>Je mehr Kriterien Sie im Produktfilter ausw&auml;hlen, um so mehr schr&auml;nken Sie die Ergebnisliste ein. Sie k&ouml;nnen einzelne Kriterien durch Anklicken aktivieren und wieder deaktivieren. Um die Suche zur&uuml;ckzusetzen, klicken Sie im Produktfilter auf <a href="/filme.html">Filter zur&uuml;cksetzen</a>.';

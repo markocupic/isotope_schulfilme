@@ -27,6 +27,6 @@ $GLOBALS['TL_LANG']['MSC']['order_number'] = 'Bestell-Nr.';
 $GLOBALS['TL_LANG']['MSC']['shipping_note'] = 'Beim Abschluss des Kaufs k&ouml;nnen Sie zwischen den Lieferarten <strong>Download</strong> und <strong>USB-Stick</strong> w&auml;hlen.';
 $GLOBALS['TL_LANG']['MSC']['zielgruppe'] = 'Zielgruppe';
 
-
-
+$GLOBALS['TL_LANG']['MSC']['activeIsoFilters'] = 'Aktive Filter';
+$GLOBALS['TL_LANG']['MSC']['resultOfYourSearch'] = 'Ergebnis Ihrer Suche';
 $GLOBALS['TL_LANG']['MSC']['noProducts'] = 'Keine passenden Filme gefunden.<br><br><strong>Hinweis</strong>:<br>Je mehr Kriterien Sie links ausw&auml;hlen, um so mehr schr&auml;nken Sie die Ergebnisliste ein. Wenn Sie ein Fach und eine Zielgruppe oder eine Schulform anw&auml;hlen, sehen Sie unser Filmangebot für diese Anforderungen. Sie können die einzelnen Kriterien durch Anklicken aktivieren und wieder deaktivieren. Um eine neue Suche zu beginnen klicken Sie bitte auf klicken Sie im Produktfilter auf <a href="/filme.html">Filter zur&uuml;cksetzen</a>.<br><br>Wenn Sie einen Film zu einem bestimmten Thema suchen, klicken Sie bitte oben rechts auf die Lupe und geben Sie ein Suchwort ein.';

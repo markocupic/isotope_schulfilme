@@ -7,7 +7,7 @@
   <?php if ($this->hasFilter): ?>
 
   <!-- Variante 1
-  <h3>Aktive Filter</h3>
+  <h3><?= $GLOBALS['TL_LANG']['MSC']['activeIsoFilters'] ?></h3>
   <ul class="filter_level_0">
     <?php foreach ($this->filters as $k => $v): ?>
     <li><?= $k ?>
@@ -22,7 +22,7 @@
   -->
   <!--Variante 2 -->
   <div class="active-iso-filters">
-    Ergebnis Ihrer Suche: <?= $this->filters2 ?>
+    <?= $GLOBALS['TL_LANG']['MSC']['resultOfYourSearch'] ?>: <?= $this->filters2 ?>
   </div>
   <?php endif; ?>
 
