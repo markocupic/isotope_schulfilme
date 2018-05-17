@@ -5,6 +5,8 @@
   <?php endif; ?>
 
   <?php if ($this->hasFilter): ?>
+
+  <!-- Variante 1
   <h3>Aktive Filter</h3>
   <ul class="filter_level_0">
     <?php foreach ($this->filters as $k => $v): ?>
@@ -17,8 +19,9 @@
     </li>
     <?php endforeach; ?>
   </ul>
-
-  <div>
+  -->
+  <!--Variante 2 -->
+  <div class="active-iso-filters">
     Ergebnis Ihrer Suche: <?= $this->filters2 ?>
   </div>
   <?php endif; ?>
