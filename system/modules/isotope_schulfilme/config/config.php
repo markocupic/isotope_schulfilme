@@ -27,6 +27,8 @@ $GLOBALS['TL_HOOKS']['generatePage'][] = array('Markocupic\Isotope\Classes\Movie
 $GLOBALS['TL_HOOKS']['generatePage'][] = array('Markocupic\Isotope\Classes\MovieHelper', 'downloadMovie');
 $GLOBALS['TL_HOOKS']['generatePage'][] = array('Markocupic\Isotope\Classes\NotifyCustomer', 'notifyCustomerBeforeContractExpiration');
 
+// downloadFromProductCollection Hook (set Product title as filename)
+$GLOBALS['ISO_HOOKS']['downloadFromProductCollection'][] = array('Markocupic\Isotope\Classes\DownloadFromProductCollectionHook','downloadFromProductCollectionHook');
 
 // notification_center_config.php
 $GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['schulfilme'] = array

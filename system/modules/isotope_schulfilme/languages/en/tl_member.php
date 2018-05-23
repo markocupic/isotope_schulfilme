@@ -20,3 +20,4 @@ $GLOBALS['TL_LANG']['tl_member']['vertragsendeAm'] = array('Vertrag l&auml;uft a
 $GLOBALS['TL_LANG']['tl_member']['erinnerungsnachrichtVersandt'] = array('Kunde wurde vor Vertragsende per E-Mail benachrichtigt', '');
 $GLOBALS['TL_LANG']['tl_member']['umsatz'] = array('Umsatz', '');
 $GLOBALS['TL_LANG']['tl_member']['bemerkungen'] = array('Bemerkungen', '');
+$GLOBALS['TL_LANG']['tl_member']['company'] = array('Schule/Firma', 'GebenSie die Schule oder Firma ein');
