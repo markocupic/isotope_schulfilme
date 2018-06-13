@@ -8,6 +8,7 @@ $GLOBALS['TL_LANG']['MSC']['newFileUpload'] = 'Die Datei "%s" wurde erfolgreich 
 
 // Errors
 $GLOBALS['TL_LANG']['ERR']['doNotAllowMultifileupload'] = 'Multifile-Upload ist nicht m&ouml;glich. Es darf maximal eine Datei hochgeladen werden. Bitte probieren Sie es nochmals.';
+$GLOBALS['TL_LANG']['ERR']['fileNotFound'] = 'Fehler! Filmdatei konnte nicht gefunden werden.';
 
 
 // MSC

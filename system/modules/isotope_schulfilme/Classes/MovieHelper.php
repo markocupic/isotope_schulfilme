@@ -67,6 +67,36 @@ class MovieHelper
     }
 
     /**
+     * @param $id
+     * @return bool
+     */
+    public static function trailerExists($id)
+    {
+        $path = sprintf(Config::get('trailerPath'), $id);
+        if (is_file(TL_ROOT . '/' . $path))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @param $id
+     * @return bool
+     */
+    public static function movieExists($id)
+    {
+        $path = sprintf(Config::get('moviePath'), $id);
+        if (is_file(TL_ROOT . '/' . $path))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
      * generatePage Hook
      * Stream movie
      */
@@ -121,7 +151,14 @@ class MovieHelper
         // Product Schulform
         $arrProductSchulform = StringUtil::deserialize($objProduct->schulform, true);
 
+        // Product Inklusion
+        $arrProductInklusion = StringUtil::deserialize($objProduct->inklusion, true);
 
+        // Product Bilingualer Unterricht
+        $arrProductBilingualerUnterricht = StringUtil::deserialize($objProduct->bilingualer_unterricht, true);
+
+
+        // Get member object
         $objMember = MemberModel::findByPk($userId);
         if ($objMember === null)
         {
@@ -134,11 +171,14 @@ class MovieHelper
             return false;
         }
 
+        // Get member settings
         $arrAllowedFaecher = StringUtil::deserialize($objMember->allowFaecher, true);
-
         $arrAllowedSchulform = StringUtil::deserialize($objMember->allowSchulform, true);
+        $arrAllowedInklusion = StringUtil::deserialize($objMember->allowInklusion, true);
+        $arrAllowedBilingualerUnterricht = StringUtil::deserialize($objMember->allowBilingualerUnterricht, true);
 
-        if (count($arrAllowedFaecher) < 1 && count($arrAllowedSchulform) < 1)
+
+        if (count($arrAllowedFaecher) < 1 && count($arrAllowedSchulform) < 1 && count($arrAllowedInklusion) < 1 && count($arrAllowedBilingualerUnterricht) < 1)
         {
             return false;
         }
@@ -149,6 +189,16 @@ class MovieHelper
         }
 
         if (count(array_intersect($arrProductSchulform, $arrAllowedSchulform)) > 0)
+        {
+            return true;
+        }
+
+        if (count(array_intersect($arrProductInklusion, $arrAllowedInklusion)) > 0)
+        {
+            return true;
+        }
+
+        if (count(array_intersect($arrProductBilingualerUnterricht, $arrAllowedBilingualerUnterricht)) > 0)
         {
             return true;
         }

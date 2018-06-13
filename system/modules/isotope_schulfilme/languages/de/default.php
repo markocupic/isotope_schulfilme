@@ -8,11 +8,12 @@ $GLOBALS['TL_LANG']['MSC']['newFileUpload'] = 'Die Datei "%s" wurde erfolgreich 
 
 // Errors
 $GLOBALS['TL_LANG']['ERR']['doNotAllowMultifileupload'] = 'Multifile-Upload ist nicht m&ouml;glich. Es darf maximal eine Datei hochgeladen werden. Bitte probieren Sie es nochmals.';
+$GLOBALS['TL_LANG']['ERR']['fileNotFound'] = 'Fehler! Filmdatei konnte nicht gefunden werden.';
 
 
 // MSC
 $GLOBALS['TL_LANG']['MSC']['abo_included'] = 'Dieses Abo haben Sie bereits erworben.';
-$GLOBALS['TL_LANG']['MSC']['abo_licence'] = '<strong>Hinweis</strong>: Nach dem Lizenzerwerb erhalten Sie innerhalb weniger Tage Zugangsdaten, die Sie an alle Lehrkr&auml;fte Ihrer Schule weitergeben k&ouml;nnen. Die Lizenz umfasst auch alle Schulfilme, die wir im laufenden Lizenzzeitraum neu produzieren. Die Lizenz zur Nutzung der Schulfilme ist auf 1 Jahr befristet und danach automatisch beendet.';
+$GLOBALS['TL_LANG']['MSC']['abo_licence'] = '<strong>Hinweis</strong>: Nach dem Lizenzerwerb erhalten Sie innerhalb weniger Tage Zugangsdaten. Diese dürfen grundsätzlich nur durch den Erwerber der Lizenz verwendet werden. Ausnahme: Bei Erwerb einer Schullizenz dürfen die Zugangsdaten an alle Lehrkr&auml;fte Ihrer Schule weitergeben werden. Die Lizenz umfasst auch alle Schulfilme, die wir im laufenden Lizenzzeitraum neu produzieren. Die Lizenz zur Nutzung der Schulfilme ist auf 1 Jahr befristet und danach automatisch beendet.';
 $GLOBALS['TL_LANG']['MSC']['abo_login'] = 'Sie m&uuml;ssen sich <a href="/registrierung.html">registrieren</a> und <a href="/login.html">einloggen</a> um ein Abonnement abzuschlie&szlig;en.';
 $GLOBALS['TL_LANG']['MSC']['download_no'] = 'Download Bestell-Nr. ';
 $GLOBALS['TL_LANG']['MSC']['fach'] = 'Fachbereich';

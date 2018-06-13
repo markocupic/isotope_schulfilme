@@ -6,7 +6,7 @@
 Contao\CoreBundle\DataContainer\PaletteManipulator::create()
     ->addLegend('schulfilme_legend', 'groups_legend', Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_BEFORE)
     ->addLegend('schulfilme_vertragsdetails_legend', 'schulfilme_legend', Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_BEFORE)
-    ->addField(array('allowSchulform', 'allowFaecher', 'allowMovieDownload', 'umsatz', 'bemerkungen'), 'schulfilme_legend', Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_APPEND)
+    ->addField(array('allowSchulform', 'allowInklusion', 'allowBilingualerUnterricht', 'allowFaecher', 'allowMovieDownload', 'umsatz', 'bemerkungen'), 'schulfilme_legend', Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_APPEND)
     ->addField(array('erinnerungsnachrichtVersandt', 'vertragsendeAm'), 'schulfilme_vertragsdetails_legend', Contao\CoreBundle\DataContainer\PaletteManipulator::POSITION_APPEND)
     ->applyToPalette('default', 'tl_member');
 
@@ -38,6 +38,28 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['allowMovieDownload'] = array
     'inputType' => 'checkbox',
     'eval'      => array('submitOnChange' => false, 'tl_class' => 'clr'),
     'sql'       => "char(1) NOT NULL default ''",
+);
+
+$GLOBALS['TL_DCA']['tl_member']['fields']['allowInklusion'] = array(
+    'label'     => &$GLOBALS['TL_LANG']['tl_member']['allowInklusion'],
+    'reference' => &$GLOBALS['TL_LANG']['tl_member']['referenceAllowInklusion'],
+    'exclude'   => true,
+    'filter'    => true,
+    'inputType' => 'checkbox',
+    'options'   => array(90, 91),
+    'eval'      => array('multiple' => true, 'submitOnChange' => false, 'tl_class' => 'clr'),
+    'sql'       => "blob NULL",
+);
+
+$GLOBALS['TL_DCA']['tl_member']['fields']['allowBilingualerUnterricht'] = array(
+    'label'     => &$GLOBALS['TL_LANG']['tl_member']['allowBilingualerUnterricht'],
+    'reference' => &$GLOBALS['TL_LANG']['tl_member']['referenceAllowBilingualerUnterricht'],
+    'exclude'   => true,
+    'filter'    => true,
+    'inputType' => 'checkbox',
+    'options'   => array(25, 26, 27),
+    'eval'      => array('multiple' => true, 'submitOnChange' => false, 'tl_class' => 'clr'),
+    'sql'       => "blob NULL",
 );
 
 $GLOBALS['TL_DCA']['tl_member']['fields']['allowSchulform'] = array(
